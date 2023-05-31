@@ -1,0 +1,39 @@
+[
+    {
+      "foto": "https://plazavea.vteximg.com.br/arquivos/ids/518449-1000-1000/980050.jpg",
+      "nombre": "Pierna Deshuesada de Cerdo",
+      "peso": "8 kg",
+      "precio": 215.20
+    },
+    {
+      "foto": "https://plazavea.vteximg.com.br/arquivos/ids/518435-450-450/980292.jpg",
+      "nombre": "Chuleta de Lomo de Cerdo",
+      "peso": "800 gramos",
+      "precio": 18.32
+    },
+    {
+        "foto": "https://plazavea.vteximg.com.br/arquivos/ids/518436-450-450/980291.jpg",
+        "nombre": "Chuleta Parrillera de Cerdo",
+        "peso": "800 gramos",
+        "precio": 13.52
+      },
+      {
+        "foto": "https://plazavea.vteximg.com.br/arquivos/ids/518448-450-450/20127190.jpg",
+        "nombre": "Panceta de Cerdo con Hueso con Piel EL BUEN CORTE pro",
+        "peso": "1.04 Kg",
+        "precio":31.09
+      },
+      {
+        "foto": "https://plazavea.vteximg.com.br/arquivos/ids/518447-450-450/966795.jpg",
+        "nombre": "Panceta de Cerdo con Piel",
+        "peso": "2 Kg",
+        "precio": 63.00
+      },
+      {
+        "foto": "https://plazavea.vteximg.com.br/arquivos/ids/344206-450-450/20123116.jpg",
+        "nombre": "Guiso de Cerdo Nacional Fresco",
+        "peso": "1.29 Kg",
+        "precio": 34.70
+      }
+  ]
+  

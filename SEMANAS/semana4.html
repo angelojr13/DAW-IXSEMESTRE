@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio DAW</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Angelo Junior Diaz Rojas</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html" class="nav__link active" style="color: #FFC300;">Inicio</a></li>
+                        <li class="nav__item"><a href="../index.html" class="nav__link" style="color: #FFC300;">Información</a></li>
+                        <li class="nav__item" style="position: relative;">
+                            <a href="#skills" class="nav__link" style="color: #FFC300;">Contenido: </a>
+                            <select class="nav__select" onchange="location = this.value;">
+                                <option value="">Seleccione una semana</option>
+                                <option value="semana1.html">Semana 1</option>
+                                <option value="semana2.html">Semana 2</option>
+                                <option value="semana3.html">Semana 3</option>
+                                <option value="semana4.html">Semana 4</option>
+                                <option value="semana5.html">Semana 5</option>
+                                <option value="semana6.html">Semana 6</option>
+                                <option value="semana7.html">Semana 7</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            <div >
+                <br><br><br><br>
+                <h1 style="text-align: center;">Manejo del DOM con Javascript</h1>
+                
+                <div> 
+                <embed class="myEmbed" src="Documents/semana4.pdf" type="application/pdf" width="80%" height="600px" />
+                </div>
+                <hr>
+                <br>
+                <div class="cuadro">
+                    <div id="pelota"></div>
+                    <div class="buttons">
+                      <button class="btn-style" id="play">Play</button>
+                      <button class="btn-style" id="pause">Pause</button>
+                      <button class="btn-style" id="stop">Stop</button>
+                      <button class="btn-style" id="reverse">Reverse</button>
+                    </div>
+                </div>
+            </div>
+            <script src="move.js"></script>
+            
+        </main>
+        <br><br><br><br><br><br>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title" style="color: #FFC300;">Angelo Junior</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/angelojr12ajdr/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/angelojr.2019/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/AngeloDiazRoja1" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </footer>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

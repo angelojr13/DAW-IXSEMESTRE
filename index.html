@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio DAW</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Angelo Junior Diaz Rojas</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active" style="color: #FFC300;">Inicio</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" style="color: #FFC300;">Información</a></li>
+                        <li class="nav__item" style="position: relative;">
+                            <a href="#skills" class="nav__link" style="color: #FFC300;">Contenido: </a>
+                            <select class="nav__select" onchange="location = this.value;">
+                                <option value="">Seleccione una semana</option>
+                                <option value="SEMANAS/semana1.html">Semana 1</option>
+                                <option value="SEMANAS/semana2.html">Semana 2</option>
+                                <option value="SEMANAS/semana3.html">Semana 3</option>
+                                <option value="SEMANAS/semana4.html">Semana 4</option>
+                                <option value="SEMANAS/semana5.html">Semana 5</option>
+                                <option value="SEMANAS/semana6.html">Semana 6</option>
+                                <option value="SEMANAS/semana7.html">Semana 7</option>
+                            </select>
+                        </li>
+                        <li class="nav__item"><a href="#contact" class="nav__link" style="color: #FFC300;">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== INICIO =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>Soy <span class="home__title-color">Angelo Diaz</span><br> Desarrollador Web</h1>
+
+                    <a href="#" class="button">Contácteme</a>
+                </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/angelo-junior-diaz-rojas-30584a22a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/angelojr13" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="60" y="30" href="assets/img/perfil1.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+            <!--===== INFORMACIÓN =====-->
+            <section class="about section" id="about" style="background-color: #002D42; ">
+                <h1 class="section-title" style="color: #FFC300;">Información</h1>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/perfil.jpg" alt="">
+                    </div>
+                    <div style="color: whitesmoke;">
+                        <h2 class="about__subtitle">Angelo Junior Diaz Rojas</h2>
+                        <p class="about__text">Soy un estudiante de último año de Ingeniería de Sistemas de la Universidad Nacional del Centro del Perú que le gusta aprender nuevos temas de desarrollo de software. Me encanta abordar desafíos técnicos y trabajar en equipo para encontrar soluciones innovadoras. Mi objetivo es utilizar mis habilidades y conocimientos para impulsar el progreso tecnológico y crear un impacto positivo en la sociedad.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== CONTACTo =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contácteme</h2>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Nombres" class="contact__input">
+                        <input type="mail" placeholder="Correo Eletrónico" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title" style="color: #FFC300;">Angelo Junior</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/angelojr12ajdr/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/angelojr.2019/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/AngeloDiazRoja1" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </footer>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

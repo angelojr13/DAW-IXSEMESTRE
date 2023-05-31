@@ -1,0 +1,136 @@
+/************** Custom Properties ***************/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0a0a0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+:root {
+  --first-color: #0c5adb;
+  --first-alpha-color: #0c5adbbf;
+  --second-color: #007aff;
+  --second-alpha-color: #007affbf;
+  --third-color: #3d65de;
+  --third-alpha-color: #3d65debf;
+  --bg-alternative-color: #f5f8fd;
+
+  --white-color: #ffffff;
+  --gray-light-color: #7a7a7a;
+  --gray-color: #616161;
+  --gray-dark-color: #54595F;
+  --dark-color: #000000;
+
+  --link-color: #076fca;
+  --title-color: #333333;
+  --text-color: #222222;
+
+  --white-alpha-color: #ffffff80;
+  --black-alpha-color: #00000020;
+  --drop-shadow: #ffffff80;
+
+  --font: 'Mulish', sans-serif;
+  --max-width: 1200px;
+  --header-height: 6rem;
+}
+
+/************** Reset ***************/
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font);
+  font-weight: 600;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.85rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#app {
+  background-color: #fff;
+}
+
+[id] {
+  scroll-margin-top: 2rem;
+}

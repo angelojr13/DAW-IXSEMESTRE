@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Techno</title>
+  </head>
+  <body>
+    <div class="flex-grow bg-white">
+      <header class="header">
+        <section class="container">
+          <div class="logo mb-4">
+            <a class="text-light fw-bolder" href="/"
+              ><img id="logo" src="images/tr-logo.png" alt="Logo de la empresa"
+            /></a>
+          </div>
+          <button onclick="handleToggleMenu()" class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg
+              class="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+              />
+            </svg>
+          </button>
+          <nav class="menu pt-2 pb-3" onclick="handleCloseMenu()">
+            <a class="fs-6 p-2" href="#home"
+              >Home <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <a class="fs-6 p-2" href="#company-services"
+              >Company Services
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <a class="fs-6 p-2" href="#pages"
+              >Pages
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <a class="fs-6 p-2" href="#elements"
+              >Elements
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <a class="fs-6 p-2" href="#blog"
+              >Blog
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <a class="fs-6 p-2" href="#contact">Contact </a>
+            <a
+              class="fs-6 btn-border bg-transparent fw-medium border border-light p-2 px-4 ms-4"
+              href="#get-a-quote"
+              >Get A Quote</a
+            >
+          </nav>
+        </section>
+      </header>
+
+      <section id="inicio" class="home">
+        <div id="carouselIndicators" class="carousel slide">
+          <div class="position-relative" style="pointer-events: none">
+            <img
+              class="decorate-1 position-absolute z-3"
+              style="width: 220px; height: 200px"
+              src="images/sl31.png"
+              alt="image decorate 1"
+            />
+            <img
+              class="decorate-2 position-absolute z-3"
+              src="images/sl32.png"
+              alt="image decorate 2"
+            />
+            <img
+              class="decorate-3 position-absolute z-3"
+              src="images/sl33.png"
+              alt="image decorate 3"
+            />
+            <img
+              class="decorate-4 position-absolute z-3"
+              style="width: 220px; height: 220px"
+              src="images/sl34.png"
+              alt="image decorate 4"
+            />
+          </div>
+          <div class="carousel-indicators d-flex">
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="0"
+              class="active border border-white rounded-circle bg-transparent btn-border-slide"
+              style="background-image: url('images/slide1-h2-50x100.jpg')"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              class="border border-white rounded-circle bg-transparent btn-border-slide"
+              data-bs-target="#carouselIndicators"
+              style="background-image: url('images/slide1-h1-50x100.jpg')"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <article
+              class="hero-image carousel-item active"
+              style="background-image: url('images/slide1-h2.jpg')"
+            >
+              <aside class="hero-image-opacity">
+                <div class="hero-image-content">
+                  <div class="">
+                    <h6 class="text-light fs-5 fw-bolder">
+                      PROFESSIONAL IT SOLUTIONS
+                    </h6>
+                    <h2 class="hero-image-title mb-5">
+                      We are very
+                      <br />Energetic
+                    </h2>
+                    <a href="#contacto" class="btn fw-medium me-3">
+                      Get Started Now
+                    </a>
+                    <a
+                      href="#contacto"
+                      class="btn btn-border bg-transparent fw-medium border border-secondary ms-3"
+                    >
+                      Explore More
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </article>
+            <article
+              class="hero-image carousel-item"
+              style="background-image: url('images/slide1-h1.jpg')"
+            >
+              <aside class="hero-image-opacity">
+                <div class="hero-image-content">
+                  <div class="">
+                    <h6 class="text-light fs-5 fw-bolder">
+                      PROFESSIONAL IT SOLUTIONS
+                    </h6>
+                    <h2 class="hero-image-title mb-5">
+                      We are very
+                      <br />Energetic
+                    </h2>
+                    <a href="#contacto" class="btn fw-medium me-3">
+                      Get Started Now
+                    </a>
+                    <a
+                      href="#contacto"
+                      class="btn btn-border bg-transparent fw-medium border border-secondary ms-3"
+                    >
+                      Explore More
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="d-flex flex-wrap m-auto gap-4 justify-content-around items-center p-4 pt-5 mt-5"
+    >
+      <div class="card">
+        <div class="p-4 text-center">
+          <i class="fa-regular fa-thumbs-up fs-1" style="color: #0c5adb"></i>
+        </div>
+
+        <div class="icon"></div>
+        <div class="description p-2">
+          <h3 class="text-center fw-bolder fs-3">Trusted Services</h3>
+          <p class="text-center mt-3 text-gray-color">
+            Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+            libero ab voluptatibus itaque quas in voluptas techno.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="p-4 text-center">
+          <i class="fa-solid fa-headset fs-1" style="color: #0c5adb"></i>
+        </div>
+
+        <div class="icon"></div>
+        <div class="description p-2">
+          <h3 class="text-center fw-bolder fs-3">24/7 Support</h3>
+          <p class="text-center mt-3 text-gray-color">
+            Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+            libero ab voluptatibus itaque quas in voluptas techno.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="p-4 text-center">
+          <i class="fa-solid fa-people-group fs-1" style="color: #0c5adb"></i>
+        </div>
+
+        <div class="icon"></div>
+        <div class="description p-2">
+          <h3 class="text-center fw-bolder fs-3">Expert & Professional</h3>
+          <p class="text-center mt-3 text-gray-color">
+            Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+            libero ab voluptatibus itaque quas in voluptas techno.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="p-4 d-flex flex-wrap">
+      <div class="section-about me-2">
+        <h3 class="lh-5 mb-3 text-first-color h3-ls">// ABOUT TECHNO</h3>
+        <h2 class="fw-bold fs-2">
+          Most Trusted IT Solution <br />
+          & Business <span class="text-first-color">Agency</span>
+        </h2>
+        <p class="mt-5 text-gray-color">
+          Pellentesque at posuere tellus. Ut sed dui justo. Phasellus is one of
+          scelerisque turpis arcu, ut pulvinar lectus tristique non. Nam
+          laoreet, risus vel laoreet laoreet, mauris risus porta velit, id
+          imperdiet ante nisi in ante. Integer consectetur in nisi mattis
+          tincidunt. Donec lacinia faucibus nunc.
+        </p>
+        <div class="d-flex items-center justify-content-center mb-4 mt-2">
+          <img
+            src="images/testi3.jpg"
+            alt="co founder"
+            class="rounded-circle"
+          />
+          <div class="d-flex flex-column justify-content-center ms-4">
+            <h4 class="fw-bold">Marcos Romean Diangle</h4>
+            <p class="fw-normal fs-6 text-gray-color">CEO & Founder</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-about text-center">
+        <img src="images/about-new.png" alt="presentation co founder" />
+      </div>
+    </div>
+
+    <div
+      id="whatWeDo"
+      class="pt-5 bg-alternative d-flex items-center justify-content-center flex-column"
+    >
+      <section class="text-center">
+        <h3 class="lh-5 mb-3 text-first-color h3-ls">// WHAT WE DO</h3>
+        <h2 class="fw-bold fs-2 text-dark">
+          We Provide You With High Quality
+          <br />
+          <span class="fw-bold fs-1 text-dark">IT Solution</span>
+          <span class="text-first-color fs-1">Service</span>
+        </h2>
+      </section>
+      <section class="pt-5 mt-5 p-4 d-flex flex-wrap gap-4">
+        <div class="card">
+          <div class="p-4 text-center">
+            <i
+              class="fa-solid fa-person-circle-question fs-1 text-first-color"
+            ></i>
+          </div>
+
+          <div class="icon"></div>
+          <div class="description p-2">
+            <h3 class="text-center fw-bolder fs-3">Trusted Services</h3>
+            <p class="text-center mt-3 text-gray-color">
+              Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+              libero ab voluptatibus itaque quas in voluptas techno.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-4 text-center">
+            <i class="fa-solid fa-server fs-1 text-first-color"></i>
+          </div>
+
+          <div class="icon"></div>
+          <div class="description p-2">
+            <h3 class="text-center fw-bolder fs-3">IT Management</h3>
+            <p class="text-center mt-3 text-gray-color">
+              Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+              libero ab voluptatibus itaque quas in voluptas techno.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-4 text-center">
+            <i class="fa-solid fa-computer fs-1 text-first-color"></i>
+          </div>
+
+          <div class="icon"></div>
+          <div class="description p-2">
+            <h3 class="text-center fw-bolder fs-3">Product Design</h3>
+            <p class="text-center mt-3 text-gray-color">
+              Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+              libero ab voluptatibus itaque quas in voluptas techno.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-4 text-center">
+            <i class="fa-solid fa-cloud-arrow-up fs-1 text-first-color"></i>
+          </div>
+
+          <div class="icon"></div>
+          <div class="description p-2">
+            <h3 class="text-center fw-bolder fs-3">Cloud Service</h3>
+            <p class="text-center mt-3 text-gray-color">
+              Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+              libero ab voluptatibus itaque quas in voluptas techno.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-4 text-center">
+            <i class="fa-solid fa-shield-halved fs-1 text-first-color"></i>
+          </div>
+
+          <div class="icon"></div>
+          <div class="description p-2">
+            <h3 class="text-center fw-bolder fs-3">Cyber Security</h3>
+            <p class="text-center mt-3 text-gray-color">
+              Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+              libero ab voluptatibus itaque quas in voluptas techno.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p-4 text-center">
+            <i class="fa-solid fa-cloud fs-1 text-first-color"></i>
+          </div>
+
+          <div class="icon"></div>
+          <div class="description p-2">
+            <h3 class="text-center fw-bolder fs-3">Cloud Computing</h3>
+            <p class="text-center mt-3 text-gray-color">
+              Lorem ipsum dolor sit amet, consecte tur adipisicing elit. Ipsa
+              libero ab voluptatibus itaque quas in voluptas techno.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  <div class="elementor-column-wrap elementor-element-populated">
+    <div class="elementor-widget-wrap">
+      <div class="elementor-element elementor-element-d0ac40a elementor-widget elementor-widget-sectiontitle"
+        data-id="d0ac40a" data-element_type="widget" data-widget_type="sectiontitle.default">
+        <div class="elementor-widget-container">
+          <div class="">
+            <div class="section-title t_center">
+              <h5>Work Process</h5>
+              <h3>How IT Work</h3>
+              <div class="bar-main">
+                <div class="bar bar-big"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        class="elementor-section elementor-inner-section elementor-element elementor-element-74be319 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="74be319" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-row">
+            <div
+              class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-01f0663"
+              data-id="01f0663" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div
+                    class="elementor-element elementor-element-c2030b8 first-process elementor-widget elementor-widget-workprocess"
+                    data-id="c2030b8" data-element_type="widget" data-widget_type="workprocess.default">
+                    <div class="elementor-widget-container">
+                      <div class="work_progress style-three">
+                        <div class="progress_content">
+                          <div class="work_progress-number">
+                            <span>1</span>
+                          </div>
+                          <div class="work_progress-title">
+                            <h2 class="text-dark">Select A Project</h2>
+                          </div>
+                          <div class="work_progress-desc">
+                            <p class="text-gray-color">
+                              We have the technology and industry expertise to
+                              develop solutions that can connect people and
+                              businesses across variety of mobile devices.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .progress_content -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2038aa3"
+              data-id="2038aa3" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div class="elementor-element elementor-element-9ace9cb elementor-widget elementor-widget-workprocess"
+                    data-id="9ace9cb" data-element_type="widget" data-widget_type="workprocess.default">
+                    <div class="elementor-widget-container">
+                      <div class="work_progress style-three">
+                        <div class="progress_content">
+                          <div class="work_progress-number">
+                            <span>2</span>
+                          </div>
+                          <div class="work_progress-title">
+                            <h2 class="text-dark">Project Analysis</h2>
+                          </div>
+                          <div class="work_progress-desc">
+                            <p class="text-gray-color">
+                              We have the technology and industry expertise to
+                              develop solutions that can connect people and
+                              businesses across variety of mobile devices.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .progress_content -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9c278f9"
+              data-id="9c278f9" data-element_type="column">
+              <div class="elementor-column-wrap elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                  <div class="elementor-element elementor-element-e23bf13 elementor-widget elementor-widget-workprocess"
+                    data-id="e23bf13" data-element_type="widget" data-widget_type="workprocess.default">
+                    <div class="elementor-widget-container">
+                      <div class="work_progress style-three">
+                        <div class="progress_content">
+                          <div class="work_progress-number">
+                            <span>3</span>
+                          </div>
+                          <div class="work_progress-title">
+                            <h2 class="text-dark">Deliver Result</h2>
+                          </div>
+                          <div class="work_progress-desc">
+                            <p class="text-gray-color">
+                              We have the technology and industry expertise to
+                              develop solutions that can connect people and
+                              businesses across variety of mobile devices.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .progress_content -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--ABOUT US--->
+  <div id="nicole"
+    class="mt-5"
+    style="background-image: url(techno.jpg); background-size:cover; background-position: center; height: 65vh;">
+    <section
+      class="elementor-section elementor-top-section elementor-element elementor-element-d6dd31b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+      data-id="d6dd31b" data-element_type="section"
+      data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="">
+          <div
+            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19ed49d"
+            data-id="19ed49d" data-element_type="column">
+            <div class="elementor-column-wrap elementor-element-populated">
+              <div class="elementor-widget-wrap">
+                <div class="elementor-element elementor-element-9db7dfd elementor-widget elementor-widget-sectiontitle"
+                  data-id="9db7dfd" data-element_type="widget" data-widget_type="sectiontitle.default">
+                  <div class="elementor-widget-container">
+                    <div class="">
+                      <div class="section-title_t_center">
+                        <h5 style="color:#FFFF">Client Reviews</h5>
+                        <h3 style="color:#FFFF">What People And Clients</h3>
+                        <h2 style="color:#FFFF">Think About Us?<span></span></h2>
+                        <div class="bar-main">
+                          <div class="bar bar-big"></div>
+                        </div>
+                        <p style="color:#FFFF">Distinctively exploit optimal alignments for intuitive. Quickly
+                          coordinate business
+                          applications through revolutionary catalysts for chang the Seamlessly optimal testing
+                          procedures.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="elementor-widget-container">
+        <div class="testimonial_list owl-carousel owl-loaded curosel-style testimonial-style-four owl-drag">
+          <div class="elementor-row d-flex justify-content-around">
+            <div class="owl-item" style="margin-right: 150px;width: 360.533px; position: relative;">
+              <div class="col-md-12">
+                <div class="single_testimonial">
+                  <div class="testi_thumb">
+                    <img decoding="async" src="images/testi3.jpg"
+                      alt="">
+                  </div>
+                  <div class="testi_content">
+                    <div class="testi_text">
+                      Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem
+                      incididunt ut labore dolore magna aliqua. Ut enim adern minim
+                    </div>
+                  </div>
+                  <div class="reviews_rating">
+                    <div class="testi-star text-first-color">
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                    </div>
+
+                  </div><!-- .reviews_rating -->
+                  <div class="testi_title">
+                    <h4>Andree Russel<span>Founder</span></h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="margin-right: 150px;width: 360.533px; position: relative;">
+              <div class="col-md-12">
+
+                <div class="single_testimonial">
+
+                  <div class="testi_thumb">
+                    <img decoding="async" src="images/testi2.jpg"
+                      alt="">
+                  </div>
+
+                  <div class="testi_content">
+                    <div class="testi_text">
+                      Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem
+                      incididunt ut labore dolore magna aliqua. Ut enim adern minim </div>
+                  </div>
+
+                  <div class="reviews_rating">
+
+                    <div class="testi-star text-first-color">
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                    </div>
+
+                  </div><!-- .reviews_rating -->
+                  <div class="testi_title">
+                    <h4>Hossain Khan<span>Web Developer</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="margin-right: 150px;width: 360.533px; position: relative;">
+              <div class="col-md-12">
+
+                <div class="single_testimonial">
+
+                  <div class="testi_thumb">
+                    <img decoding="async" src="images/testi3.jpg"
+                      alt="">
+                  </div>
+
+                  <div class="testi_content">
+                    <div class="testi_text">
+                      Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem
+                      incididunt ut labore dolore magna aliqua. Ut enim adern minim </div>
+                  </div>
+                  <div class="reviews_rating">
+                    <div class="testi-star text-first-color">
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                      <i class="fa fa-star active"></i>
+                    </div>
+                  </div><!-- .reviews_rating -->
+                  <div class="testi_title">
+                    <h4>Andree Russel<span>Founder</span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+
+    
+    <div
+      id="Team Member"
+      class="pt-5 mt-5 d-flex items-center justify-content-center flex-column "
+    >
+      <section class="text-center mt-5 pt-5">
+        <h3 class="lh-5 mb-3 text-first-color h3-ls">TEAM MEMBER</h3>
+        <h2 class="fw-bold fs-1">
+          Our Awesome Creative
+          <br />
+          <span class="fw-bold fs-1">Team Member</span>
+        </h2>
+      </section>
+
+      <section
+        class="p-4 pb-5 d-flex flex-row gap-4 justify-content-center"
+      >
+        <div class="card1">
+          <div class="p-4 text-center">
+            <img src="images/team1.jpg" class="rounded" alt="co founder" />
+          </div>
+
+          <div class="description p-2">
+            <h4 class="text-center fw-bolder fs-5">Ellen Eyre</h4>
+            <h5 class="fw-normal fs-7 text-first-color text-center p-2">
+              ADMIN MANAGER
+            </h5>
+          </div>
+        </div>
+
+        <div class="card1">
+          <div class="p-4 text-center">
+            <img src="images/team2.jpg" class="rounded" alt="" />
+          </div>
+
+          <div class="description p-2">
+            <h4 class="text-center fw-bolder fs-5">Adam Jhone</h4>
+            <h5 class="fw-normal fs-7 text-first-color text-center p-2">
+              CHAIRMAN
+            </h5>
+          </div>
+        </div>
+
+        <div class="card1">
+          <div class="p-4 text-center">
+            <img src="images/team4-1.jpg" class="rounded" alt="" />
+          </div>
+
+          <div class="description p-2">
+            <h4 class="text-center fw-bolder fs-5">Adam Jhone</h4>
+            <h5 class="fw-normal fs-7 text-first-color text-center p-2">
+              FOUNDER
+            </h5>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      id="why choose"
+      class="p-4 bg-alternative d-flex flex-wrap justify-content-center"
+    >
+      <div
+        class="d-flex section-about me-3 items-center p-5 text-center pb-5 justify-content-center items-center"
+      >
+        <a href="https://www.youtube.com/watch?v=Wx48y_fOfiY" class="d-flex flex-column justify-content-center items-center"
+          ><img src="images/new-about.jpg" alt="presentation co founder"
+        /></a>
+      </div>
+
+      <div class="section-about">
+        <h4 class="lh-5 mb-3 text-first-color h3-ls">WHY CHOOSE TECHNO</h4>
+        <h2 class="fw-bold fs-1">We Deal With The Aspects</h2>
+        <h3 class="fw-bold fs-2">
+          Professional
+          <span class="fs-2 text-first-color">IT Services</span>
+        </h3>
+        <p class="mt-5 text-gray-color fs-6">
+          There are many variations of passages of Lorem Ipsum available and,
+          <br />
+          but the majority have and suffered alteration in some form, by
+          injected <br />
+          humour, or going randomised words which don't look even slightly
+          <br />
+          believable for your company.
+        </p>
+
+        <div class="d-flex items-center mb-4 mt-5">
+          <img src="images/icon_1.png" alt="co founder" class="rounded product-img mt-4"  />
+          <div class="d-flex flex-column justify-content-center ms-4">
+            <h3 class="fw-bold">Product Designs</h3>
+            <p class="fw-normal fs-6 text-gray-color">
+              There are many variations of passages of Lorem Ipsum <br />
+              available, but the majority have suffered alteration in some
+              <br />
+              form, by injected humour
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex items-center mb-4 mt-5">
+          <img src="images/icon_2.png" alt="co founder" class="rounde product-img mt-4" />
+          <div class="d-flex flex-column justify-content-center ms-4">
+            <h3 class="fw-bold">Big Data & Analytics</h3>
+            <p class="fw-normal fs-6 text-gray-color">
+              There are many variations of passages of Lorem Ipsum <br />
+              available, but the majority have suffered alteration in some
+              <br />
+              form, by injected humour
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex items-center mb-4 mt-5">
+          <img src="images/icon_3.png" alt="co founder" class="rounde product-img mt-4" />
+          <div class="d-flex flex-column justify-content-center ms-4">
+            <h3 class="fw-bold">Maintain App Data</h3>
+            <p class="fw-normal fs-6 text-gray-color">
+              There are many variations of passages of Lorem Ipsum <br />
+              available, but the majority have suffered alteration in some
+              <br />
+              form, by injected humour
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+    class="subscribe"
+      data-id="711338d"
+      data-element_type="section"
+      data-settings='{"background_background":"classic"}'
+    >
+      <div class="container-fluid sub-principal">
+               
+                        
+                          <div class="conteiner sub-elementos">
+                            <div
+                              class="elementor-element elementor-element-3bf9e80 elementor-widget elementor-widget-heading"
+                              data-id="3bf9e80"
+                              data-element_type="widget"
+                              data-widget_type="heading.default"
+                            >
+                              <div class="elemento-texto p-4 text-center">
+                                <h2
+                                  class="elementor-heading-title elementor-size-default"
+                                >
+                                  Subscribe our newsletter
+                                </h2>
+                              </div>
+                            </div>
+                            <div class="container elementos-correo p-3 align-items-center">
+                              <div class="row">
+                            
+                                <div class="col-md-8 mx-auto text-center">
+                                  <form
+                                    class="sub-correo text-md-start"
+                                    method="post"
+                                  
+                                  >
+                                    <div class="in-email ">
+                                        <input
+                                          type="email"
+                                          name="email"
+                                          placeholder="Enter Your Email*"
+                                          required=""
+                                          style="
+                                            border: initial;
+  padding: initial;
+  margin: initial;
+                                            margin-bottom: 2rem;
+  background-color: unset;
+  /* etc. */"
+                                        />
+                                        <button type="submit">Subscribe</button>
+                                    </div>
+                                    <label style="display: none !important"
+                                      >Leave this field empty if you're human:
+                                      <input
+                                        type="text"
+                                        name="_mc4wp_honeypot"
+                                        value=""
+                                        tabindex="-1"
+                                        autocomplete="off" /></label
+                                    ><input
+                                      type="hidden"
+                                      name="_mc4wp_timestamp"
+                                      value="1683120661"
+                                    /><input
+                                      type="hidden"
+                                      name="_mc4wp_form_id"
+                                      value="791"
+                                    /><input
+                                      type="hidden"
+                                      name="_mc4wp_form_element_id"
+                                      value="mc4wp-form-1"
+                                    />
+                                    <div class="mc4wp-response"></div>
+                                  </form>
+                                </div>
+                              </div>
+                        
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section
+    class="xd"
+      data-id="35f0c87"
+      data-element_type="section"
+      data-settings='{"background_background":"classic"}'
+    >
+
+    
+    
+
+      <div class="foot-principal">
+           
+            
+                  <div class="container-fluid foot-elementos p-5">
+                    <div class="row">
+           
+                                        
+                            <div class="foot-elemento col-md-3">                   
+                              <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                              <div class="elementor-element elementor-element-9f04bdf elementor-widget elementor-widget-image" data-id="9f04bdf" data-element_type="widget" data-widget_type="image.default">
+                          <div class="elementor-widget-container">
+                                  <div class="elementor-image p-3">
+                                            <a href="https://wp.ditsolution.net/techno">
+                                <img width="161" height="32" src="https://wp.ditsolution.net/techno/wp-content/uploads/2022/07/logo2-1.png" class="attachment-large size-large wp-image-9197" alt="" loading="lazy">								</a>
+                                              </div>
+                              </div>
+                          </div>
+                          <div class="elementor-element elementor-element-c51c71c elementor-widget elementor-widget-text-editor" data-id="c51c71c" data-element_type="widget" data-widget_type="text-editor.default">
+                          <div class="elementor-widget-container">
+                                  <div class="elementor-text-editor elementor-clearfix">
+                          <p>Completely strategize client-cent Phosfluorescently iterate efficient<br>internal or organic.</p>					</div>
+                              </div>
+                          </div>
+                          <div class="elementor-element elementor-element-4b46e22 elementor-widget elementor-widget-heading" data-id="4b46e22" data-element_type="widget" data-widget_type="heading.default">
+                          <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Follow Us</h2>		</div>
+                          </div>
+                          <div class="elementor-element elementor-element-646eb7d e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="646eb7d" data-element_type="widget" data-widget_type="social-icons.default">
+                          <div class="elementor-widget-container">
+                            <div class="elementor-social-icons-wrapper elementor-grid">
+                                <span class="elementor-grid-item">
+                            <a class="elementor-icon elementor-social-icon elementor-social-icon-flaticon-facebook-4 elementor-repeater-item-b0435c4" href="#" rel="nofollow">
+                              <span class="elementor-screen-only">Flaticon-facebook-4</span>
+                              <i class="flaticon flaticon-facebook-4"></i>					</a>
+                          </span>
+                                <span class="elementor-grid-item">
+                            <a class="elementor-icon elementor-social-icon elementor-social-icon-flaticon-instagram-logo elementor-repeater-item-ef9ad52" href="#" rel="nofollow">
+                              <span class="elementor-screen-only">c</span>
+                              <i class="flaticon flaticon-instagram-logo"></i>					</a>
+                          </span>
+                                <span class="elementor-grid-item">
+                            <a class="elementor-icon elementor-social-icon elementor-social-icon-flaticon-twitter elementor-repeater-item-7443945" href="#" rel="nofollow">
+                              <span class="elementor-screen-only">Flaticon-twitter</span>
+                              <i class="flaticon flaticon-twitter"></i>					</a>
+                          </span>
+                                <span class="elementor-grid-item">
+                            <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-ef171ba" href="#" rel="nofollow">
+                              <span class="elementor-screen-only">Youtube</span>
+                              <i class="fab fa-youtube"></i>					</a>
+                          </span>
+                            </div>
+                          </div>
+                          </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="foot-elemento col-md-2">                   
+
+                          <div class="elementor-widget-wrap p-3">
+                            <div class="elementor-element elementor-element-c6cafb4 elementor-widget elementor-widget-heading" data-id="c6cafb4" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                      <h2 class="elementor-heading-title elementor-size-default">Quick Links</h2>		</div>
+                        </div>
+                        <div class="elementor-element elementor-element-15e297a elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="15e297a" data-element_type="widget" data-widget_type="icon-list.default">
+                        <div class="elementor-widget-container">
+                          <ul class="elementor-icon-list-items">
+                              <li class="elementor-icon-list-item p-3">
+                                      <a href="#">
+                
+                                        <span class="elementor-icon-list-icon ">
+                              <i aria-hidden="true" class="flaticon flaticon-right-arrow"></i>						</span>
+                                    <span class="elementor-icon-list-text">Home</span>
+                                      </a>
+                                  </li>
+                                <li class="elementor-icon-list-item p-3">
+                                      <a href="#">
+                
+                                        <span class="elementor-icon-list-icon">
+                              <i aria-hidden="true" class="flaticon flaticon-right-arrow"></i>						</span>
+                                    <span class="elementor-icon-list-text">About Us</span>
+                                      </a>
+                                  </li>
+                                <li class="elementor-icon-list-item p-3">
+                                      <a href="#">
+                
+                                        <span class="elementor-icon-list-icon">
+                              <i aria-hidden="true" class="flaticon flaticon-right-arrow"></i>						</span>
+                                    <span class="elementor-icon-list-text">Contact Us</span>
+                                      </a>
+                                  </li>
+                                <li class="elementor-icon-list-item p-3">
+                                      <a href="#">
+                
+                                        <span class="elementor-icon-list-icon">
+                              <i aria-hidden="true" class="flaticon flaticon-right-arrow"></i>						</span>
+                                    <span class="elementor-icon-list-text">Services</span>
+                                      </a>
+                                  </li>
+                                <li class="elementor-icon-list-item p-3">
+                                      <a href="#">
+                
+                                        <span class="elementor-icon-list-icon">
+                              <i aria-hidden="true" class="flaticon flaticon-right-arrow"></i>						</span>
+                                    <span class="elementor-icon-list-text">Our Team</span>
+                                      </a>
+                                  </li>
+                            </ul>
+                        </div>
+                        </div>
+                            </div>
+                          </div>
+
+                            <div class="foot-elemento col-md-4">   
+                              <div class="elementor-widget-wrap p-3">
+                                <div class="elementor-element elementor-element-e935da5 elementor-widget elementor-widget-heading" data-id="e935da5" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                          <h2 class="elementor-heading-title elementor-size-default">Popular Post</h2>		</div>
+                            </div>
+                            <div class="elementor-element elementor-element-e4609bb elementor-widget elementor-widget-wp-widget-em_recent_post_widget" data-id="e4609bb" data-element_type="widget" data-widget_type="wp-widget-em_recent_post_widget.default">
+                            <div class="elementor-widget-container">
+                            <div class="single-widget-item">
+                                
+                          <div class="recent-post-item m-3">
+                            <div class="recent-post-image">
+                                      <a href="https://wp.ditsolution.net/techno/business-strategy-plan-2022-from-the-usa/">
+                              
+                              <img width="80" height="80" src="https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog2-80x80.png" class="attachment-techno-recent-image size-techno-recent-image wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog2-80x80.png 80w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog2-150x150.png 150w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog2-106x106.png 106w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog2-300x300.png 300w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog2-100x100.png 100w" sizes="(max-width: 80px) 100vw, 80px">					
+                              </a>
+                            
+                            </div>
+                            <div class="recent-post-text">
+                              <h4><a href="https://wp.ditsolution.net/techno/business-strategy-plan-2022-from-the-usa/">
+                                Business Strategy Plan 2022 From the USA										
+                              </a></h4>					
+                              <span class="rcomment">April 9, 2023</span>
+                            </div>
+                          </div>
+                            
+                          <div class="recent-post-item m-3">
+                            <div class="recent-post-image">
+                                      <a href="https://wp.ditsolution.net/techno/the-most-10-chrome-extention-download-strategy/">
+                              
+                              <img width="80" height="80" src="https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog1-80x80.png" class="attachment-techno-recent-image size-techno-recent-image wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog1-80x80.png 80w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog1-150x150.png 150w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog1-106x106.png 106w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog1-300x300.png 300w, https://wp.ditsolution.net/techno/wp-content/uploads/2023/04/blog1-100x100.png 100w" sizes="(max-width: 80px) 100vw, 80px">					
+                              </a>
+                            
+                            </div>
+                            <div class="recent-post-text">
+                              <h4><a href="https://wp.ditsolution.net/techno/the-most-10-chrome-extention-download-strategy/">
+                                The Most 10 Chrome Extention Download Strategy										
+                              </a></h4>					
+                              <span class="rcomment">April 9, 2023</span>
+                            </div>
+                          </div>
+                              </div>
+                          </div>
+                            </div>
+                                </div>
+                              </div>                
+
+                              <div class="foot-elemento col-md-3">   
+                                <div class="elementor-widget-wrap p-3   ">
+                                  <div class="elementor-element elementor-element-22c737c elementor-widget elementor-widget-heading" data-id="22c737c" data-element_type="widget" data-widget_type="heading.default">
+                              <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default">Contact Info</h2>		</div>
+                              </div>
+                              <div class="elementor-element elementor-element-9bf67b3 elementor-widget elementor-widget-iconbox" data-id="9bf67b3" data-element_type="widget" data-widget_type="iconbox.default">
+                              <div class="elementor-widget-container">
+                            
+                          
+                          <div class="icon-box">
+                      
+                            <div class="icon-box-icon">
+                      
+                                      <div class="icon">
+                                <i class="flaticon flaticon-placeholder"></i>
+                              </div>
+                      
+                              
+                            </div>
+                      
+                            <div class="icon-box-content">
+                              <div class="title">
+                                <h2>Location</h2>
+                              </div>
+                              <div class="description">
+                                <p>55 Main Street, New York.</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          
+                              </div>
+                              </div>
+                              <div class="elementor-element elementor-element-ef164ca elementor-widget elementor-widget-iconbox" data-id="ef164ca" data-element_type="widget" data-widget_type="iconbox.default">
+                              <div class="elementor-widget-container">
+                            
+                          
+                          <div class="icon-box">
+                      
+                            <div class="icon-box-icon">
+                      
+                                      <div class="icon">
+                                <i class="flaticon flaticon-communications"></i>
+                              </div>
+                      
+                              
+                            </div>
+                      
+                            <div class="icon-box-content">
+                              <div class="title">
+                                <h2>Email Us</h2>
+                              </div>
+                              <div class="description">
+                                <p>example@gmail.com</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          
+                              </div>
+                              </div>
+                              <div class="elementor-element elementor-element-78e59a1 elementor-widget elementor-widget-iconbox" data-id="78e59a1" data-element_type="widget" data-widget_type="iconbox.default">
+                              <div class="elementor-widget-container">
+                            
+                          
+                          <div class="icon-box">
+                      
+                            <div class="icon-box-icon">
+                      
+                                      <div class="icon">
+                                <i class="flaticon flaticon-call"></i>
+                              </div>
+                      
+                              
+                            </div>
+                      
+                            <div class="icon-box-content">
+                              <div class="title">
+                                <h2>Phone Us</h2>
+                              </div>
+                              <div class="description">
+                                <p>+012 (345) 678 99</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          
+                              </div>
+                              </div>
+                                  </div>
+                                                 
+        </div>
+     
+<div class="container-fluid foot">
+  <div class="row">
+  <div class="copy col-md-5">
+    <p>© 2022 Techno.All Rights Reserved.</p>
+  </div>
+
+  <div class="otros col-md-5 d-flex flex-row-reverse">
+  
+
+<ul class="elementor-icon-list-items elementor-inline-items">
+  <li class="elementor-icon-list-item elementor-inline-item">
+        <span class="elementor-icon-list-text">Privacy Policy</span>
+      </li>
+    <li class="elementor-icon-list-item elementor-inline-item">
+        <span class="elementor-icon-list-text">Terms &amp; Conditions</span>
+      </li>
+    <li class="elementor-icon-list-item elementor-inline-item">
+        <span class="elementor-icon-list-text">Contact Us</span>
+      </li>
+
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
